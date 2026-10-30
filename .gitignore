@@ -32,3 +32,4 @@ cmake_install.cmake
 # Nix
 result
 result-*
+sol
