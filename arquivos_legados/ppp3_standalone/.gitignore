@@ -1,0 +1,26 @@
+# Build artifacts & binaries
+*.o
+*.out
+*.exe
+main
+exercises/ch02_drill
+exercises/ch02_miles_to_quilometers
+*.gcm
+*.pcm
+*.d
+
+# Debug & temporary files
+*.dSYM/
+.gdb_history
+
+# Direnv & Nix build outputs
+.direnv/
+result
+result-*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

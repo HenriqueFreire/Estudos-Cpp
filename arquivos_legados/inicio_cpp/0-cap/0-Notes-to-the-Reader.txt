@@ -1,0 +1,186 @@
+Notas ao Leitor
+
+"Quando o terreno não corresponde ao mapa,
+confie no terreno."
+
+- Provérbio do exército suíço
+
+  Este capítulo é uma coletânea de informações; seu objetivo é dar uma ideia do que esperar do restante do livro. Por
+favor, dê uma olhada rápida e leia o que achar interessante. Um professor considerará a maior parte das partes
+imediatamente útil. Se você estiver lendo este livro sem o auxílio de um bom professor, por favor, não tente ler e
+entender tudo neste capítulo; apenas observe "A estrutura deste livro" e a primeira parte da seção "Uma filosofia de 
+ensino e aprendizagem". Você pode querer retornar e reler este capítulo quando se sentir confortável escrevendo e 
+executando pequenos programas.
+
+0.1 A estrutura deste livro
+0.1.1 Abordagem geral
+0.1.2 Exercícios, práticas, etc.
+0.1.3 O que vem depois deste livro
+0.2 Uma filosofia de ensino e aprendizagem
+0.3 Programação e ciência da computação
+0.4 Criatividade e resolução de problemas
+0.5 Solicitação de feedback
+0.6 Referências
+0.7 Biografias
+0.2.1 A ordem dos tópicos
+0.2.2 Programação e linguagem de programação
+0.2.3 Portabilidade
+
+0.1 A estrutura deste livro
+
+  Este livro consiste em quatro partes e uma coleção de apêndices:
+  Parte I, "Noções Básicas", apresenta os conceitos e técnicas fundamentais de
+programação, juntamente com a linguagem C++ e os recursos da biblioteca
+necessários para começar a escrever código. Inclui o sistema de tipos, operações aritméticas,
+estruturas de controle, tratamento de erros e o projeto,
+implementação e uso de funções e tipos definidos pelo usuário.
+
+  Parte II, "Entrada e Saída", descreve como obter dados numéricos e de texto
+do teclado e de arquivos, e como produzir a saída correspondente
+na tela e em arquivos. Em seguida, mostra como apresentar dados numéricos
+, texto e formas geométricas como saída gráfica e como obter
+entrada em um programa a partir de uma interface gráfica do usuário (GUI).
+
+  Parte III, "Dados e Algoritmos", concentra-se na estrutura de contêineres e algoritmos da biblioteca 
+padrão C++ (a STL - Standard Template Library).
+Mostra como os contêineres (como vetor, lista e mapa) são implementados
+(usando ponteiros, arrays, memória dinâmica, exceções e templates)
+e usados. Também demonstra o design e o uso de algoritmos da biblioteca padrão
+(como sort, find e inner_product).
+
+  A Parte IV, "Ampliando a Visão", oferece uma perspectiva sobre programação
+por meio de uma discussão sobre ideais e história, por meio de exemplos (como
+computação matricial, manipulação de texto, testes e programação de sistemas embarcados) e por meio de uma breve descrição da linguagem C.
+
+Os apêndices fornecem informações úteis que não cabem em uma apresentação tutorial, como análises da linguagem C++ e dos recursos da biblioteca padrão, e descrições de como começar a usar um ambiente de desenvolvimento integrado (IDE) e uma biblioteca de interface gráfica do usuário (GUI).
+
+  Infelizmente, o mundo da programação não se divide exatamente em quatro partes claramente separadas. Portanto, as
+"partes" deste livro fornecem apenas uma classificação geral dos tópicos. Consideramos essa classificação útil (obviamente, ou não a teríamos usado), mas a realidade tem um jeito de escapar de classificações rígidas. Por exemplo, precisamos usar operações de entrada muito antes de podermos dar uma explicação completa dos fluxos padrão C++ (fluxos de entrada/saída). Quando o conjunto de tópicos necessários para apresentar uma ideia entra em conflito com a classificação geral, explicamos o mínimo necessário para uma boa apresentação, em vez de simplesmente remeter à explicação completa em outro lugar. Classificações rígidas funcionam muito melhor para manuais do que para tutoriais.
+
+  A ordem dos tópicos é determinada por técnicas de programação, e não por recursos da linguagem de programação; veja §0.2. Para uma apresentação organizada em torno de recursos da linguagem, veja o Apêndice A.
+
+  Para facilitar a revisão e ajudar caso você perca algum ponto importante durante a primeira leitura,
+onde você ainda não descobriu que tipo de informação é crucial, colocamos
+três tipos de "marcadores de alerta" na margem:
+Azul: conceitos e técnicas (este parágrafo é um exemplo disso)
+Verde: conselhos
+Vermelho: aviso
+
+#### 0.1.1 Abordagem geral
+Em nossa apresentação, buscamos o profissionalismo em vez de termos "fofos", e preferimos subestimar um ponto a exagerá-lo. Tentamos não exagerar a importância de uma técnica de programação ou de um recurso da linguagem, mas, por favor, não subestime uma afirmação simples como "Isso costuma ser útil". Se enfatizamos discretamente que algo é importante, queremos dizer que você, mais cedo ou mais tarde, perderá dias de trabalho se não o dominar. Nosso uso de humor é mais limitado do que gostaríamos, mas a experiência mostra que as ideias das pessoas sobre o que é engraçado diferem dramaticamente e que uma tentativa frustrada de humor pode ser confusa.
+
+Não fingimos que nossas ideias ou as ferramentas oferecidas são perfeitas. Nenhuma ferramenta, biblioteca, linguagem ou técnica é "a solução" para todos os muitos desafios que um programador enfrenta. Na melhor das hipóteses, ela pode ajudá-lo a desenvolver e expressar sua solução. Esforçamo-nos para evitar "mentiras brancas"; ou seja, evitamos explicações excessivamente simplificadas que são claras e fáceis de entender, mas que não são verdadeiras no contexto de linguagens e problemas reais. Por outro lado, este livro não é uma referência; para descrições mais precisas e completas de C++, consulte Bjarne Stroustrup, *The C++ Programming Language* e o padrão ISO C++.
+
+#### 0.1.2 Práticas (Drills), exercícios, etc.
+A programação não é apenas uma atividade intelectual, portanto, escrever programas é necessário para dominar as habilidades de programação. Oferecemos dois níveis de prática de programação:
+
+*   **Práticas (Drills):** Uma prática é um exercício muito simples elaborado para desenvolver habilidades práticas, quase mecânicas. Uma prática geralmente consiste em uma sequência de modificações em um único programa. Você deve fazer cada prática. Uma prática não exige compreensão profunda, inteligência ou iniciativa. Consideramos as práticas parte da estrutura básica do livro. Se você não fez as práticas, você não "fez" o livro.
+*   **Exercícios:** Alguns exercícios são triviais e outros são muito difíceis, mas a maioria destina-se a deixar algum espaço para iniciativa e imaginação. Se você fala sério, fará muitos exercícios. Faça pelo menos o suficiente para saber quais são difíceis para você. Depois, faça mais alguns desses. É assim que você aprenderá mais. Os exercícios devem ser gerenciáveis sem inteligência excepcional, em vez de serem quebra-cabeças complicados. No entanto, esperamos ter fornecido exercícios difíceis o suficiente para desafiar qualquer pessoa e exercícios suficientes para esgotar até mesmo o tempo disponível do melhor aluno. Não esperamos que você faça todos, mas sinta-se à vontade para tentar.
+
+Além disso, recomendamos que você (cada aluno) participe de um pequeno **projeto** (e mais, se o tempo permitir). Um projeto visa produzir um programa completo e útil. Idealmente, um projeto é feito por um pequeno grupo de pessoas (por exemplo, três pessoas) trabalhando juntas por cerca de um mês enquanto estudam os capítulos da Parte III. A maioria das pessoas considera os projetos a parte mais divertida e o que une tudo.
+
+Algumas pessoas gostam de deixar o livro de lado e testar alguns exemplos antes de terminar a leitura de um capítulo; outras preferem ler até o fim antes de tentar executar o código. Para apoiar os leitores com a primeira preferência, fornecemos sugestões simples para trabalho prático rotuladas como **"Tente isso:" (Try this)** em pausas naturais no texto. Um "Tente isso" é geralmente uma prática focada estritamente no tópico que o precede. Se você passar por um "Tente isso" sem tentar — talvez porque não esteja perto de um computador ou ache o texto fascinante — volte a ele quando fizer a prática do capítulo; um "Tente isso" complementa a prática do capítulo ou faz parte dela.
+
+No final de cada capítulo, você encontrará um conjunto de **questões de revisão**. Elas servem para apontar as ideias-chave explicadas no capítulo. Uma maneira de ver as questões de revisão é como um complemento aos exercícios: os exercícios focam nos aspectos práticos da programação, enquanto as questões de revisão tentam ajudá-lo a articular as ideias e conceitos. Nisso, elas se assemelham a boas perguntas de entrevista.
+
+A seção **"Termos"** ao final de cada capítulo apresenta o vocabulário básico da programação e do C++. Se você quiser entender o que as pessoas dizem sobre tópicos de programação e articular suas próprias ideias, você deve saber o que cada um significa.
+
+O aprendizado envolve repetição. Nosso ideal é apresentar cada ponto importante pelo menos duas vezes e reforçá-lo com exercícios.
+
+#### 0.1.3 O que vem depois deste livro?
+Ao final deste livro, você será um especialista em programação e em C++? Claro que não! Quando bem feita, a programação é uma arte sutil, profunda e altamente qualificada, baseada em uma variedade de habilidades técnicas. Você não deve esperar ser um especialista em programação em quatro meses, assim como não esperaria ser um especialista em biologia, em matemática, em uma língua natural (como chinês, inglês ou dinamarquês) ou em tocar violino em quatro meses — ou em meio ano, ou em um ano. O que você deve esperar, se abordar este livro seriamente, é ter um começo realmente bom que lhe permita escrever programas úteis relativamente simples, ser capaz de ler programas mais complexos e ter uma boa base conceitual e prática para trabalhos futuros.
+
+A melhor continuação para este curso inicial é trabalhar em um projeto real desenvolvendo código para ser usado por outra pessoa. Depois disso, ou (melhor ainda) em paralelo com um projeto real, leia um livro-texto geral de nível profissional (como o *The C++ Programming Language* de Stroustrup), um livro mais especializado relacionado às necessidades do seu projeto (como Qt para GUI ou ACE para programação distribuída), ou um livro-texto focado em um aspecto específico do C++ (como *Accelerated C++* de Koenig e Moo; *Exceptional C++* de Sutter; ou *Design Patterns* de Gamma et al.). Para referências completas, veja o §0.6 ou a seção de Bibliografia ao final do livro.
+
+Eventualmente, você deve aprender outra linguagem de programação. Não consideramos possível ser um profissional no reino do software — mesmo que você não seja primariamente um programador — sem conhecer mais de uma linguagem.
+
+### 0.2 Uma filosofia de ensino e aprendizagem
+O que estamos tentando ajudá-lo a aprender? E como estamos abordando o processo de ensino? Tentamos apresentar os conceitos, técnicas e ferramentas mínimos para que você possa criar programas práticos eficazes, incluindo:
+
+*   Organização de programas
+*   Depuração (debugging) e testes
+*   Design de classes
+*   Computação
+*   Design de funções e algoritmos
+*   Gráficos (apenas bidimensionais)
+*   Interfaces gráficas de usuário (GUIs)
+*   Manipulação de texto
+*   Correspondência de expressões regulares (regex)
+*   Arquivos e entrada/saída de fluxo (I/O)
+*   Gerenciamento de memória
+*   Cálculos científicos/numéricos/de engenharia
+*   Ideais de design e programação
+*   A biblioteca padrão C++
+*   Estratégias de desenvolvimento de software
+*   Técnicas de programação em linguagem C
+
+Ao longo desses tópicos, cobrimos as técnicas de programação chamadas **programação procedural** (como na linguagem C), **abstração de dados**, **programação orientada a objetos** e **programação genérica**. O tópico principal deste livro é a **programação**, ou seja, os ideais, técnicas e ferramentas para expressar ideias em código. A linguagem C++ é nossa ferramenta principal, por isso descrevemos muitos de seus recursos em detalhes. Mas lembre-se de que o C++ é apenas uma ferramenta, e não o tópico principal. Isto é "programação usando C++", não "C++ com um pouco de teoria de programação".
+
+Cada tópico que abordamos serve a pelo menos dois propósitos: apresenta uma técnica, conceito ou princípio e também um recurso prático da linguagem ou biblioteca. Por exemplo, usamos a interface de um sistema gráfico bidimensional para ilustrar o uso de classes e herança. Isso nos permite ser econômicos com o espaço (e seu tempo) e também enfatizar que programar é mais do que simplesmente "jogar" código para obter um resultado o mais rápido possível. A biblioteca padrão C++ é uma fonte importante desses exemplos de "dupla função". Por exemplo, introduzimos o `vector` da biblioteca padrão, usamos-o para ilustrar técnicas de design amplamente úteis e mostramos muitas das técnicas de programação usadas para implementá-lo. Um de nossos objetivos é mostrar como os principais recursos da biblioteca são implementados e como eles se mapeiam para o hardware. Insistimos que os artesãos devem entender suas ferramentas, e não apenas considerá-las "mágicas".
+
+#### 0.2.1 A ordem dos tópicos
+Existem muitas maneiras de ensinar alguém a programar. Claramente, não concordamos com as teorias populares de que "a maneira como eu aprendi a programar é a melhor maneira de aprender". Para facilitar o aprendizado, apresentamos logo no início tópicos que seriam considerados avançados há apenas alguns anos. Nosso ideal é que os tópicos sejam impulsionados por problemas que você encontra ao aprender a programar, fluindo suavemente de um tópico para outro à medida que você aumenta sua compreensão e habilidades práticas. O fluxo principal deste livro é mais como uma história do que um dicionário ou uma ordem hierárquica.
+
+É impossível aprender todos os princípios, técnicas e recursos de linguagem necessários para escrever um programa de uma só vez. Consequentemente, temos que escolher um subconjunto de princípios, técnicas e recursos para começar. Mais geralmente, um livro-texto ou um curso deve conduzir os alunos por uma série de subconjuntos. Consideramos nossa responsabilidade selecionar os tópicos e fornecer a ênfase. Não podemos simplesmente apresentar tudo, então devemos escolher; o que deixamos de fora é pelo menos tão importante quanto o que incluímos — em cada etapa da jornada.
+
+Para contraste, pode ser útil ver uma lista de caracterizações (severamente abreviadas) de abordagens que decidimos **não** adotar:
+
+*   **"C primeiro":** Esta abordagem para aprender C++ é um desperdício de tempo dos alunos e leva a más práticas de programação, forçando os alunos a abordar problemas com menos recursos, técnicas e bibliotecas do que o necessário. O C++ oferece verificação de tipos mais forte que o C, uma biblioteca padrão com melhor suporte para iniciantes e exceções para tratamento de erros.
+*   **De baixo para cima (Bottom-up):** Esta abordagem distrai do aprendizado de práticas de programação boas e eficazes. Ao forçar os alunos a resolver problemas com suporte insuficiente da linguagem e das bibliotecas, ela promove práticas de programação pobres e dispendiosas.
+*   **"Se você apresenta algo, deve apresentá-lo totalmente":** Esta abordagem implica uma estratégia de baixo para cima (aprofundando-se cada vez mais em cada tópico tocado). Ela entedia os iniciantes com detalhes técnicos nos quais eles não têm interesse e que provavelmente não precisarão por anos. Uma vez que você saiba programar, poderá consultar detalhes técnicos em um manual. Manuais são bons para isso, enquanto são péssimos para o aprendizado inicial de conceitos.
+*   **De cima para baixo (Top-down):** Esta abordagem, partindo dos princípios fundamentais em direção aos detalhes, tende a distrair os leitores dos aspectos práticos da programação e forçá-los a se concentrar em conceitos de alto nível antes que tenham qualquer chance de apreciar sua importância. Por exemplo, você simplesmente não pode apreciar os princípios adequados de desenvolvimento de software antes de aprender como é fácil cometer um erro em um programa e quão difícil pode ser corrigi-lo.
+*   **"Abstração primeiro":** Focar em princípios gerais e proteger o aluno das desagradáveis restrições do mundo real pode levar a um desdém pelos problemas do mundo real, linguagens, ferramentas e restrições de hardware. Frequentemente, essa abordagem é apoiada por "linguagens de ensino" que não podem ser usadas posteriormente e (deliberadamente) isolam os alunos de preocupações com hardware e sistema.
+*   **Princípios de engenharia de software primeiro:** Esta abordagem e a de "abstração primeiro" tendem a compartilhar os problemas da abordagem de cima para baixo: sem exemplos concretos e experiência prática, você simplesmente não consegue apreciar o valor da abstração e das práticas adequadas de desenvolvimento de software.
+*   **"Orientação a objetos desde o primeiro dia":** A programação orientada a objetos é uma das melhores maneiras de organizar o código e os esforços de programação, mas não é a única maneira eficaz. Em particular, sentimos que uma base nos fundamentos de tipos e código algorítmico é um pré-requisito para a apreciação do design de classes e hierarquias de classes. Usamos tipos definidos pelo usuário (o que algumas pessoas chamariam de "objetos") desde o primeiro dia, mas não mostramos como projetar uma classe até o Capítulo 6 e não mostramos uma hierarquia de classes até o Capítulo 12.
+*   **"Apenas acredite em mágica":** Esta abordagem baseia-se em demonstrações de ferramentas e técnicas poderosas sem introduzir o iniciante às técnicas e recursos subjacentes. Isso deixa o aluno tentando adivinhar — e geralmente adivinhando errado — por que as coisas são do jeito que são, quanto custa usá-las e onde podem ser aplicadas razoavelmente. Isso pode levar a um seguimento excessivamente rígido de padrões familiares de trabalho e tornar-se uma barreira para o aprendizado futuro.
+
+Naturalmente, não afirmamos que essas outras abordagens nunca sejam úteis. Na verdade, usamos várias delas para subtópicos específicos onde seus pontos fortes podem ser apreciados. No entanto, como abordagens gerais para aprender programação voltada para o uso no mundo real, nós as rejeitamos e aplicamos nossa alternativa: **primeiro o concreto** e **primeiro a profundidade**, com ênfase em conceitos e técnicas.
+
+#### 0.2.2 Programação e linguagem de programação
+Ensinamos programação primeiro e tratamos a linguagem de programação escolhida como secundária, como uma ferramenta. Nossa abordagem geral pode ser usada com qualquer linguagem de programação de propósito geral. Nosso objetivo principal é ajudá-lo a aprender conceitos gerais, princípios e técnicas. No entanto, estes não podem ser apreciados isoladamente. Por exemplo, detalhes de sintaxe, os tipos de ideias que podem ser expressas diretamente e o suporte a ferramentas diferem de linguagem para linguagem. No entanto, muitas das técnicas fundamentais para produzir código livre de erros, como escrever código logicamente simples (Capítulos 5 e 6), estabelecer invariantes (§9.4.3) e separar interfaces de detalhes de implementação (§9.7 e §14.1-2), variam pouco de uma linguagem para outra.
+
+As técnicas de programação e design devem ser aprendidas usando uma linguagem de programação. Design, organização de código e depuração não são habilidades que você pode adquirir no abstrato. Você precisa escrever código em alguma linguagem de programação e ganhar experiência prática com isso. Isso implica que você deve aprender o básico de uma linguagem de programação. Dizemos "o básico" porque os dias em que se podia aprender toda uma linguagem industrial importante em poucas semanas se foram para sempre. As partes do C++ que apresentamos foram escolhidas como o subconjunto que mais diretamente suporta a produção de código de qualidade. Além disso, apresentamos recursos do C++ que você não poderá evitar encontrar, seja porque são necessários para a completude lógica ou porque são comuns na comunidade C++.
+
+#### 0.2.3 Portabilidade
+É comum escrever C++ para rodar em uma variedade de máquinas. Grandes aplicações em C++ rodam em máquinas das quais nunca ouvimos falar! Consideramos a portabilidade e o uso de uma variedade de arquiteturas de máquinas e sistemas operacionais muito importantes. Essencialmente, cada exemplo neste livro não é apenas C++ Padrão ISO, mas também portátil. A menos que especificamente declarado, o código que apresentamos deve funcionar em cada implementação de C++ e foi testado em várias máquinas e sistemas operacionais.
+
+Os detalhes de como compilar, vincular (link) e executar um programa C++ diferem de sistema para sistema. Seria tedioso mencionar os detalhes de cada sistema e cada compilador toda vez que precisássemos nos referir a um problema de implementação. No Apêndice E, fornecemos as informações mais básicas sobre como começar a usar o Visual Studio e o Microsoft C++ em uma máquina Windows.
+
+Se você tiver problemas com um dos IDEs (ambientes de desenvolvimento integrados) populares, mas um tanto elaborados, sugerimos que tente trabalhar pela **linha de comando**; é surpreendentemente simples. Por exemplo, aqui está o conjunto completo de comandos necessários para compilar, vincular e executar um programa simples consistindo em dois arquivos-fonte, `meu_arquivo1.cpp` e `meu_arquivo2.cpp`, usando o compilador GNU C++, `g++`, em um sistema Unix ou Linux:
+
+```bash
+g++ -o meu_programa meu_arquivo1.cpp meu_arquivo2.cpp
+./meu_programa
+```
+Sim, isso é realmente tudo o que é necessário.
+
+#### 0.3 Programação e ciência da computação
+A programação é tudo o que existe na ciência da computação? Claro que não! A única razão pela qual levantamos essa questão é que as pessoas costumam se confundir sobre isso. Abordamos os principais tópicos da ciência da computação, como algoritmos e estruturas de dados, mas nosso objetivo é ensinar **programação**: o design e a implementação de programas. Isso é tanto mais quanto menos do que a maioria das noções aceitas de ciência da computação:
+
+*   **Mais**, porque a programação envolve muitas habilidades técnicas que normalmente não são consideradas parte de nenhuma ciência.
+*   **Menos**, porque não apresentamos sistematicamente a base para as partes da ciência da computação que usamos.
+
+O objetivo deste livro é ser parte de um curso de ciência da computação (se o seu objetivo for tornar-se um cientista da computação), ser a base para o primeiro de muitos cursos de construção e manutenção de software (se o seu objetivo for tornar-se um programador ou engenheiro de software) e, em geral, ser parte de um todo maior. Baseamo-nos na ciência da computação o tempo todo e enfatizamos os princípios, mas ensinamos programação como uma habilidade prática baseada em teoria e experiência, e não como uma ciência.
+
+#### 0.4 Criatividade e resolução de problemas
+O objetivo principal deste livro é ajudá-lo a expressar suas ideias em código, não ensinar como ter essas ideias. Ao longo do caminho, damos muitos exemplos de como podemos abordar um problema, geralmente por meio da análise de um problema seguida pelo refinamento gradual de uma solução. Consideramos a programação em si uma forma de resolução de problemas: somente através da compreensão completa de um problema e de sua solução você pode expressar um programa correto para ele, e somente através da construção e teste de um programa você pode ter certeza de que sua compreensão está completa. Assim, a programação é inerentemente parte de um esforço para ganhar compreensão. No entanto, nosso objetivo é demonstrar isso por meio de exemplos, em vez de "pregação" ou apresentação de prescrições detalhadas para a resolução de problemas.
+
+#### 0.5 Solicitação de feedback
+Não acreditamos que o livro-texto perfeito possa existir; as necessidades dos indivíduos diferem demais para isso. No entanto, gostaríamos de tornar este livro e seus materiais de apoio tão bons quanto pudermos. Para isso, precisamos de feedback; um bom livro-texto não pode ser escrito isolado de seus leitores. Por favor, envie-nos relatos de erros, erros de digitação, texto obscuro, explicações ausentes, etc. Também agradeceríamos sugestões de melhores exercícios, melhores exemplos e tópicos a adicionar, tópicos a excluir, etc. Comentários construtivos ajudarão os futuros leitores e postaremos erratas em nosso site de apoio: `www.stroustrup.com/Programming`.
+
+#### 0.6 Referências
+Junto com a listagem das publicações mencionadas neste capítulo, esta seção também inclui publicações que você pode achar úteis. (Lista de livros técnicos omitida na tradução por serem títulos de referência em inglês).
+
+#### 0.7 Biografias
+Você pode perguntar, com razão: "Quem são esses caras que querem me ensinar a programar?" Então, aqui estão algumas informações biográficas. Eu, Bjarne Stroustrup, escrevi este livro e, junto com Lawrence "Pete" Petersen, projetei e ministrei o curso de nível universitário para iniciantes (primeiro ano) que foi desenvolvido simultaneamente com o livro, usando rascunhos dele.
+
+**Bjarne Stroustrup**
+Sou o designer e o implementador original da linguagem de programação C++. Usei a linguagem, e muitas outras linguagens de programação, para uma grande variedade de tarefas de programação nos últimos 30 anos. Eu simplesmente amo código elegante e eficiente usado em aplicações desafiadoras, como controle de robôs, gráficos, jogos, análise de texto e redes. Ensinei design, programação e C++ para pessoas de essencialmente todas as habilidades e interesses. Sou membro fundador do comitê de padrões ISO para C++, onde atuo como presidente do grupo de trabalho para a evolução da linguagem. Este é meu primeiro livro introdutório. Meus outros livros, como *The C++ Programming Language* e *The Design and Evolution of C++*, foram escritos para programadores experientes.
+
+Nasci em uma família de classe trabalhadora em Aarhus, Dinamarca, e obtive meu mestrado em matemática com ciência da computação na universidade de minha cidade natal. Meu doutorado em ciência da computação é da Universidade de Cambridge, Inglaterra. Trabalhei para a AT&T por cerca de 25 anos, primeiro no famoso Centro de Pesquisa em Ciência da Computação dos Bell Labs — onde o Unix, C, C++ e tanto mais foram inventados — e mais tarde no AT&T Labs-Research. Tenho uma vida fora do trabalho. Sou casado e tenho dois filhos. Leio muito e gosto de quase todos os tipos de música. Comida boa com amigos é uma parte essencial da vida e gosto de visitar lugares e pessoas interessantes em todo o mundo. Para poder desfrutar da boa comida, eu corro.
+
+**Lawrence "Pete" Petersen**
+Pete era um professor. Por quase 20 anos, ele ensinou linguagens de programação na Texas A&M. Foi selecionado pelos alunos para prêmios de excelência no ensino cinco vezes. Como filho de um oficial do exército, ele foi criado em constante movimento. Após concluir o curso de filosofia, serviu no exército por 22 anos. Em 1991, formou uma pequena empresa de software que produziu software de gestão para departamentos universitários até 1999. Seus interesses estavam no ensino, design e programação de software que pessoas reais pudessem usar. Pete faleceu de câncer de pulmão em 2007. Sem ele, the course would never have succeeded.
+
+### Posfácio
+A maioria dos capítulos fornece um curto "posfácio" tentando dar alguma perspectiva sobre as informações apresentadas no capítulo. Fazemos isso percebendo que as informações podem ser — e muitas vezes são — intimidantes e só serão totalmente compreendidas após a realização de exercícios, a leitura de capítulos posteriores (que aplicam as ideias do capítulo) e uma revisão posterior. Não entre em pânico. Relaxe; isso é natural e esperado. Você não se tornará um especialista em um dia, mas pode se tornar um programador razoavelmente competente à medida que avança no livro. No caminho, você encontrará muitas informações, muitos exemplos e muitas técnicas que muitos programadores acharam estimulantes e divertidas.

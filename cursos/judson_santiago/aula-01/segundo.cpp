@@ -1,0 +1,17 @@
+// segundo - erro de sintaxe
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int cenouras;  // declaração de uma variável inteira
+  cenouras = 25; // atribuição de um valor à variável
+
+  cout << "Eu tenho" << cenouras << " cenouras. " << endl;
+
+  cenouras = cenouras - 1; // decrementa a variável
+
+  cout << "Agora eu tenho" << cenouras << " cenouras. " << endl;
+
+  return 0;
+}

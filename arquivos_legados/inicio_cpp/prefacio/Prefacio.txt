@@ -1,0 +1,165 @@
+Prefácio
+"Que se danem os torpedos!
+Velocidade máxima à frente."
+
+-Almirante Farragut
+
+Programação é a arte de expressar soluções para problemas de forma que um computador
+possa executar essas soluções. Grande parte do esforço em programação é gasto encontrando
+e refinando soluções. Muitas vezes, um problema só é totalmente compreendido através do
+processo de programação de uma solução para ele.
+
+Este livro é para alguém que nunca programou antes, mas está disposto
+a se esforçar para aprender. Ele ajuda você a entender os princípios e adquirir as
+habilidades práticas de programação usando a linguagem de programação C++. Meu objetivo
+é que você adquira conhecimento e experiência suficientes para realizar tarefas de programação simples e úteis
+usando as melhores técnicas atuais. Quanto tempo isso
+levará? Como parte de um curso universitário do primeiro ano, você pode estudar este livro em
+um semestre (assumindo que você tenha uma carga horária equivalente a quatro disciplinas de dificuldade média). Se você estudar sozinho, não espere gastar menos tempo do que isso (talvez
+15 horas por semana durante 14 semanas).
+
+Três meses podem parecer muito tempo, mas há muito o que aprender e você estará
+escrevendo seus primeiros programas simples em cerca de uma hora. Além disso, todo aprendizado é gradual:
+cada capítulo apresenta novos conceitos úteis e os ilustra com exemplos inspirados em usos do mundo real. Sua capacidade de expressar ideias em código - fazendo um
+computador fazer o que você quer que ele faça - aumenta gradual e constantemente à medida que você
+avança. Eu nunca digo: "Aprenda um mês de teoria e depois veja se consegue
+usá-la."
+
+Por que você gostaria de programar? Nossa civilização funciona com software. Sem entender software, você se reduz a acreditar em "mágica" e ficará excluído de muitos dos campos de trabalho técnicos mais interessantes, lucrativos e socialmente úteis.
+
+Quando falo de programação, penso em todo o espectro de programas de computador, desde aplicativos para computadores pessoais com interfaces gráficas de usuário (GUIs), passando por cálculos de engenharia e aplicativos de controle de sistemas embarcados (como câmeras digitais, carros e celulares), até aplicativos de manipulação de texto, como os encontrados em muitas áreas das humanidades e dos negócios.
+
+Assim como a matemática, a programação - quando bem feita - é um exercício intelectual valioso que aguça nossa capacidade de pensar. No entanto, graças ao feedback do computador, a programação é mais concreta do que a maioria das formas de matemática e, portanto, acessível a mais pessoas. É uma maneira de alcançar e mudar o mundo - idealmente para melhor. Finalmente, programar pode ser muito divertido.
+
+Por que C++? Você não pode aprender a programar sem uma linguagem de programação,
+e o C++ oferece suporte direto aos principais conceitos e técnicas usados ​​em softwares do mundo real.
+O C++ é uma das linguagens de programação mais utilizadas, encontrada em
+uma gama incomparável de áreas de aplicação. Você encontra aplicações em C++ em todos os lugares,
+do fundo dos oceanos à superfície de Marte. O C++ é definido de forma precisa e abrangente por um padrão internacional não proprietário.
+Implementações de qualidade e/ou gratuitas estão disponíveis em todos os tipos de computador. A maioria dos
+conceitos de programação que você aprenderá usando C++ pode ser usada diretamente em
+outras linguagens, como C, C#, Fortran e Java. Finalmente, eu simplesmente gosto de C++ como
+uma linguagem para escrever código elegante e eficiente.
+
+Este não é o livro mais fácil sobre programação para iniciantes; não pretende ser. Meu objetivo é apenas que seja o livro mais fácil a partir do qual você possa aprender o básico da
+programação do mundo real. Essa é uma meta bastante ambiciosa, pois muitos softwares modernos
+dependem de técnicas consideradas avançadas há poucos anos.
+
+Minha premissa fundamental é que você queira escrever programas para uso de
+outros, e fazê-lo de forma responsável, proporcionando um nível decente de qualidade do sistema:
+ou seja, presumo que você queira atingir um nível de profissionalismo. Consequentemente,
+escolhi os tópicos deste livro para abordar o que é necessário para começar
+com a programação no mundo real, e não apenas o que é fácil de ensinar e aprender. Se você
+precisa de uma técnica para realizar um trabalho básico corretamente, eu a descrevo, demonstro os conceitos
+e os recursos da linguagem necessários para dar suporte à técnica, forneço exercícios para ela
+e espero que você trabalhe nesses exercícios. Se você só quer entender programas de brinquedo,
+você pode se virar com muito menos do que eu apresento. Por outro lado,
+não vou desperdiçar seu tempo com material de importância prática marginal. Se uma ideia
+é explicada aqui, é porque você quase certamente precisará dela.
+
+Se o seu desejo é usar o trabalho de outros sem entender como as coisas são feitas e sem adicionar significativamente ao código, este livro não é para você. Nesse caso, considere se você se beneficiaria mais com outro livro e outra linguagem. Se essa for aproximadamente a sua visão de programação, considere também de onde você tirou essa visão e se ela é de fato adequada às suas necessidades. As pessoas frequentemente subestimam a complexidade da programação, bem como seu valor. Eu detestaria que você desenvolvesse uma aversão à programação por causa de uma incompatibilidade entre o que você precisa e o panorama da realidade do software que descrevo. Há muitas áreas do mundo da "tecnologia da informação" que não exigem conhecimento de programação. Este livro tem como objetivo atender aqueles que desejam escrever ou entender programas não triviais.
+
+Devido à sua estrutura e objetivos práticos, este livro também pode ser usado como um segundo livro sobre programação para alguém que já conhece um pouco de C++ ou para alguém que programa em outra linguagem e deseja aprender C++. Se você se encaixa em uma dessas categorias, evito adivinhar quanto tempo levará para ler este livro, mas recomendo que faça muitos dos exercícios. Isso o ajudará a combater o problema comum de escrever programas em estilos mais antigos e familiares, em vez de adotar técnicas mais recentes quando estas forem mais apropriadas. Se você aprendeu C++ de uma das maneiras mais tradicionais, encontrará algo surpreendente e útil antes de chegar ao Capítulo 7. A menos que seu nome seja Stroustrup, o que discuto aqui não é "o C++ de antigamente".
+
+Aprende-se programação escrevendo programas. Nesse sentido, a programação é semelhante a outras atividades com um componente prático. Você não pode aprender a nadar, a tocar um instrumento musical ou a dirigir um carro apenas lendo um livro - você precisa praticar. Nem pode aprender a programar sem ler e escrever muito código. Este livro se concentra em exemplos de código intimamente ligados a textos explicativos e diagramas. Você
+precisa disso para entender os ideais, conceitos e princípios da programação e
+para dominar as construções da linguagem usadas para expressá-los. Isso é essencial, mas por si só,
+não lhe dará as habilidades práticas de programação. Para isso, você precisa
+fazer os exercícios e se acostumar com as ferramentas para escrever, compilar e executar programas.
+Você precisa cometer seus próprios erros e aprender a corrigi-los.
+Não há substituto para escrever código. Além disso, é aí que está a diversão!
+
+Por outro lado, há muito mais na programação do que seguir algumas regras e ler o manual.
+Este livro não se concentra na "sintaxe do C++". Compreender os ideais, princípios e técnicas fundamentais é a essência de um bom programador. Somente um código bem projetado tem chance de se tornar parte de um sistema correto, confiável e de fácil manutenção.
+Além disso, os fundamentos são o que perduram: eles ainda serão essenciais mesmo depois que as linguagens e ferramentas atuais evoluírem ou forem substituídas.
+
+E quanto à ciência da computação, engenharia de software, tecnologia da informação, etc.? Isso tudo é programação? Claro que não! Programação é um dos tópicos fundamentais que sustentam tudo nas áreas relacionadas à computação e tem um lugar natural em um curso equilibrado de ciência da computação. Eu forneço breves introduções a conceitos e técnicas-chave de algoritmos, estruturas de dados, interfaces de usuário, processamento de dados e engenharia de software. No entanto, este livro não substitui um estudo completo e equilibrado desses tópicos.
+
+O código pode ser bonito e útil. Este livro foi escrito para ajudá-lo a ver isso, a entender o que significa um código bonito e a ajudá-lo a dominar os princípios e adquirir as habilidades práticas para criar esse código. Boa sorte com a programação!
+
+Nota para os alunos:
+
+Dos mais de 1000 alunos do primeiro ano que já lecionamos usando versões preliminares deste livro na
+Universidade Texas A&M, cerca de 60% já haviam programado antes e cerca de 40%
+nunca tinham visto uma linha de código na vida. A maioria teve sucesso, então você também consegue.
+
+Você não precisa ler este livro como parte de um curso. Presumo que o livro
+será amplamente utilizado para estudo individual. No entanto, seja estudando-o
+como parte de um curso ou de forma independente, tente trabalhar com outras pessoas. Programação tem
+uma reputação – injusta – de ser uma atividade solitária. A maioria das pessoas trabalha melhor e aprende
+mais rápido quando faz parte de um grupo com um objetivo comum. Aprender juntos e
+discutir problemas com amigos não é trapaça! É a maneira mais eficiente – e também
+mais agradável – de progredir. No mínimo, trabalhar com amigos
+o força a articular suas ideias, que é praticamente a maneira mais eficiente de
+testar sua compreensão e garantir que você se lembre. Você não precisa descobrir pessoalmente a resposta para todos os problemas obscuros de linguagem e ambiente de programação. No entanto, não se engane deixando de fazer os exercícios e uma boa quantidade de atividades (mesmo que nenhum professor o obrigue a fazê-los). Lembre-se: programação é (entre outras coisas) uma habilidade prática que você precisa praticar para dominar. Se você não escrever código (faça vários exercícios para cada capítulo), ler este livro será um exercício teórico inútil.
+
+A maioria dos alunos - especialmente os bons alunos dedicados - enfrenta momentos em que se perguntam se todo o seu esforço vale a pena. Quando isso acontecer com você (não é o caso aqui), faça uma pausa, releia o prefácio e consulte o Capítulo 1 ("Computadores, Pessoas e Programação") e o Capítulo 22 ("Ideais e História"). Neles, tento articular o que acho empolgante na programação e por que a considero uma ferramenta crucial para contribuir positivamente para o mundo. Se você tiver curiosidade sobre minha filosofia de ensino e abordagem geral, dê uma olhada no Capítulo 0 ("Notas ao Leitor").
+
+Você pode achar o peso deste livro preocupante, mas ele deve tranquilizá-lo, pois parte da razão para o tamanho é que prefiro repetir uma explicação ou adicionar um exemplo em vez de fazer você procurar a única explicação. A outra parte importante da razão é que a segunda metade do livro é material de referência e "material adicional" apresentado para você explorar somente se estiver interessado em mais informações sobre uma área específica de programação, como programação de sistemas embarcados, análise de texto ou computação numérica.
+
+E, por favor, não tenha muita pressa. Aprender qualquer nova habilidade importante e valiosa leva tempo e vale a pena.
+
+Nota para professores:
+
+Não. Este não é um curso tradicional de Introdução à Ciência da Computação. É um livro sobre
+como construir software funcional. Como tal, omite muito do que um estudante de ciência da computação tradicionalmente aprende (completude de Turing, máquinas de estado, matemática discreta, gramáticas de Chomsky, etc.). Até mesmo o hardware é ignorado, partindo do pressuposto de que os alunos já usaram computadores de diversas maneiras desde o jardim de infância.
+
+Este livro sequer tenta mencionar os tópicos mais importantes de ciência da computação. Ele trata de
+programação (ou, de forma mais geral, de como desenvolver software) e, como tal,
+aprofunda-se em menos tópicos do que muitos cursos tradicionais.
+
+Ele tenta fazer apenas uma coisa bem feita, e ciência da computação não é um assunto para um único curso. Se
+este livro/curso for usado como parte de um curso de ciência da computação, engenharia da computação,
+engenharia elétrica (muitos dos nossos primeiros alunos eram de engenharia elétrica), ciência da informação,
+ou qualquer outro programa, espero que seja ensinado juntamente com outros cursos como
+parte de uma introdução abrangente.
+
+Por favor, leia o Capítulo 0 ("Notas ao Leitor") para uma explicação da minha
+filosofia de ensino, abordagem geral, etc. Tente transmitir essas ideias aos
+seus alunos ao longo do processo.
+
+Suporte
+
+O site de suporte do livro, www.stroustrup.com/Programming, contém uma variedade de materiais que auxiliam o ensino e a aprendizagem de programação usando este livro. O material provavelmente será aprimorado com o tempo, mas, para começar, você pode encontrar:
+Slides para aulas baseadas no livro
+Um guia do instrutor
+Arquivos de cabeçalho e implementações de bibliotecas usadas no livro
+Código para exemplos no livro
+Soluções para exercícios selecionados
+Links potencialmente úteis
+Erratas
+Sugestões de melhorias são sempre bem-vindas.
+
+Agradecimentos
+
+Gostaria de agradecer especialmente ao meu falecido colega e co-professor Lawrence "Pete" Petersen por me encorajar a enfrentar a tarefa de ensinar iniciantes muito antes de eu me sentir confortável para fazê-lo, e por fornecer a experiência prática de ensino que tornou o curso um sucesso. Sem ele, a primeira versão do curso teria sido um fracasso. Trabalhamos juntos nas primeiras versões do
+curso para o qual este livro foi concebido e o ministramos juntos repetidamente, aprendendo
+com nossas experiências, aprimorando o curso e o livro. Meu uso de "nós" neste
+livro inicialmente significava "Pete e eu".
+
+Agradeço aos alunos, monitores e colegas de ensino de ENGR 112
+na Universidade Texas A&M que direta e indiretamente nos ajudaram a construir este
+livro, e a Walter Daugherity, que também ministrou o curso. Agradeço também a
+Damian Dechev, Tracy Hammond, Arne Tolstrup Madsen, Gabriel Dos Reis,
+Nicholas Stroustrup, J. C. van Winkel, Greg Versoonder, Ronnie Ward e Leor
+Zolman pelos comentários construtivos sobre as versões preliminares deste livro. Agradeço a Mogens
+Hansen por explicar sobre software de controle de motores. Agradeço a AI Aho, Stephen
+Edwards, Brian Kernighan e Daisy Nguyen por me ajudarem a me isolar
+das distrações para conseguir escrever durante os verões.
+
+Agradeço aos revisores que a Addison-Wesley encontrou para mim. Seus comentários,
+baseados principalmente no ensino de C++ ou Ciência da Computação 101 no nível universitário,
+foram inestimáveis: Richard Enbody, David Gustafson, Ron McCarty,
+e K. Narayanaswamy. Agradeço também ao meu editor, Peter Gordon, por muitos comentários úteis
+e (não menos importante) por sua paciência. Sou muito grato à equipe de produção
+montada pela Addison-Wesley; eles contribuíram muito para a qualidade do livro:
+Julie Grady (revisora), Chris Keane (compositor), Rob Mauhar (ilustrador),
+Julie Nahil (editora de produção) e Barbara Wood (revisora de texto).
+
+Além da minha própria verificação de código assistemática, Bashar Anabtawi, Yinan
+Fan e Yuriy Solodkyy verificaram todos os fragmentos de código usando o Microsoft C++ 7.1
+(2003) e 8.0 (2005) e o GCC 3.4.4.
+Gostaria também de agradecer a Brian Kernighan e Doug Mcilroy por estabelecerem um
+padrão muito elevado para escrever sobre programação, e a Dennis Ritchie e Kristen
+Nygaard por fornecerem lições valiosas em design prático de linguagem.
+
